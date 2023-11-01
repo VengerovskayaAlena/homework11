@@ -1,6 +1,10 @@
 package com.company; //checksForLeapYear
 
 public class Main {
+    public static void separation(){
+        System.out.println("---------------------------");
+    }
+
     public static void printWeighable (int checksForLeapYear){
         if (checksForLeapYear < 1584) {
             System.out.println("Високосный год был введён только в 1584 году, выберите другой год");
@@ -50,10 +54,12 @@ public class Main {
         System.out.println(" Задача 1");
         int year = 2021;
         printWeighable(year);
+        separation();
         System.out.println(" Задача 2");
         int clientDeviceYear = 2015;
         int clientOS2 = 1;
         applicationМersion(clientDeviceYear, clientOS2);
+        separation();
         System.out.println(" Задача 3");
         int deliveryDistance = 95;
         checksDeliveryDay(deliveryDistance);
